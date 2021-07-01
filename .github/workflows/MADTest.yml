@@ -32,7 +32,7 @@ jobs:
           head -1 testDirectory/ListActivityTest.java
           cd testDirectory
           ls
-          go run arrange.go
+          #go run arrange.go
           cd ..
           
       - name: Make gradlew executable
