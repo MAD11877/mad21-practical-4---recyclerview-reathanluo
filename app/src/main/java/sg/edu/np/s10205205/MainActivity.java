@@ -43,10 +43,16 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+
         Intent receiver = getIntent();
-        String message = receiver.getStringExtra("random");
+        Intent rc = getIntent();
+        String name = rc.getStringExtra("Name");
+        String des = rc.getStringExtra("Des");
+
         TextView textView1 = findViewById(R.id.textView);
-        textView1.setText("MAD " + message);
+        textView1.setText(name);
+        TextView textView2 = findViewById(R.id.textView2);
+        textView2.setText(des);
     }
 
     @Override
